@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Levická televízia - spravodajstvo, šport, publicistika, záznamy MsZ a informácie pre Levice."
+    />
+    <title>Levická televízia | Moderný video portál</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800;900&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#domov" aria-label="Levická televízia domov">
+        <img src="assets/logo.png" alt="Levická televízia" />
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Otvoriť menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Hlavná navigácia">
+        <a href="#video">Video</a>
+        <a href="#tim">Náš tím</a>
+        <a href="#informacie">Informácie</a>
+        <a href="#administrativa">Administratíva</a>
+        <a href="#reklama">Reklama</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <a class="header-cta" href="https://vimeo.com/user8658408" target="_blank" rel="noreferrer">
+        Video archív
+      </a>
+    </header>
+
+    <main id="domov">
+      <section class="hero">
+        <img class="hero-bg" src="assets/hero.jpg" alt="Hrad Levice" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content section">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Lokálna televízia mesta Levice</p>
+            <h1>Správy, šport a verejný život v jednom modernom obraze.</h1>
+            <p>
+              Levická televízia prináša spravodajstvo, publicistiku, záznamy mestského
+              zastupiteľstva a video archív pre divákov v Leviciach aj online.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#video">Pozrieť najnovšie videá</a>
+              <a class="button secondary" href="mailto:redakcia@levickatelevizia.sk">Napísať redakcii</a>
+            </div>
+          </div>
+
+          <aside class="live-card reveal" aria-label="Vysielací prehľad">
+            <div class="live-dot"><span></span> vysielanie</div>
+            <strong>06:00 - 24:00</strong>
+            <p>Jedna hodinová opakujúca sa slučka denne v rozsahu 18 hodín.</p>
+            <div class="signal-grid">
+              <a href="#naladit">STA</a>
+              <a href="#naladit">Orange</a>
+              <a href="#naladit">Magio TV</a>
+              <a href="#naladit">UPC</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Rýchly kontakt">
+        <div>
+          <a href="tel:+421366308420">+421 36 630 8420</a>
+          <a href="tel:+421903586677">+421 903 586 677</a>
+          <a href="mailto:redakcia@levickatelevizia.sk">redakcia@levickatelevizia.sk</a>
+          <a href="#kontakt">CK Junior, A. Sládkoviča 2, Levice</a>
+        </div>
+      </section>
+
+      <section class="section video-hub" id="video">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Video</p>
+          <h2>Aktuálne relácie a archív v prehľadnom video hube.</h2>
+        </div>
+
+        <div class="video-tabs reveal" role="tablist" aria-label="Kategórie videí">
+          <button class="tab active" type="button" data-filter="spravy">Spravodajstvo</button>
+          <button class="tab" type="button" data-filter="sport">Šport</button>
+          <button class="tab" type="button" data-filter="publicistika">Publicistika</button>
+          <button class="tab" type="button" data-filter="msz">Záznamy MsZ</button>
+        </div>
+
+        <div class="video-grid">
+          <a class="video-card large reveal" data-category="spravy" href="https://vimeo.com/1201454550?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer">
+            <img src="assets/news-01.jpg" alt="Juniáles 2026" />
+            <span>play</span>
+            <h3>Juniáles 2026</h3>
+          </a>
+          <a class="video-card reveal" data-category="spravy" href="https://vimeo.com/1200688331?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer">
+            <img src="assets/news-02.jpg" alt="Olympiáda základných škôl 2026" />
+            <span>play</span>
+            <h3>Olympiáda základných škôl 2026</h3>
+          </a>
+          <a class="video-card reveal" data-category="spravy" href="https://vimeo.com/1198775485?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer">
+            <img src="assets/news-03.jpg" alt="Patrioti Levice na mestskom úrade" />
+            <span>play</span>
+            <h3>Patrioti Levice na mestskom úrade - slávnostné prijatie 2026</h3>
+          </a>
+          <a class="video-card reveal" data-category="spravy" href="https://vimeo.com/1197723048" target="_blank" rel="noreferrer">
+            <img src="assets/news-04.jpg" alt="Piknik v kaštieli" />
+            <span>play</span>
+            <h3>Piknik v kaštieli - pozvánka</h3>
+          </a>
+          <a class="video-card reveal" data-category="spravy" href="https://vimeo.com/1197718667" target="_blank" rel="noreferrer">
+            <img src="assets/news-05.jpg" alt="Fotografické osobnosti" />
+            <span>play</span>
+            <h3>Fotografické osobnosti levického regiónu po roku 1950</h3>
+          </a>
+          <a class="video-card reveal" data-category="spravy" href="https://vimeo.com/1197725623" target="_blank" rel="noreferrer">
+            <img src="assets/news-06.jpg" alt="Levická plavecká 12-hodinovka" />
+            <span>play</span>
+            <h3>Levická plavecká 12-hodinovka - pozvánka</h3>
+          </a>
+          <a class="video-card reveal" data-category="spravy" href="https://vimeo.com/1197349704" target="_blank" rel="noreferrer">
+            <img src="assets/news-07.jpg" alt="Mestská športová olympiáda MŠ" />
+            <span>play</span>
+            <h3>Mestská športová olympiáda materských škôl</h3>
+          </a>
+          <a class="video-card reveal" data-category="spravy" href="https://vimeo.com/1197315945?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer">
+            <img src="assets/news-08.jpg" alt="Grand finále 2026" />
+            <span>play</span>
+            <h3>Grand finále 2026</h3>
+          </a>
+
+          <a class="video-card large reveal" data-category="sport" href="https://vimeo.com/1201861887?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/sport-01.jpg" alt="Judo klub Levice" />
+            <span>play</span>
+            <h3>MVC Mesta Levice 2026 - Judo klub Levice</h3>
+          </a>
+          <a class="video-card reveal" data-category="sport" href="https://vimeo.com/1200677834?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/sport-02.jpg" alt="MÚMF" />
+            <span>play</span>
+            <h3>Slávnostné vyhodnotenie sezóny 2025-2026 MÚMF</h3>
+          </a>
+          <a class="video-card reveal" data-category="sport" href="https://vimeo.com/1195021500?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/sport-03.jpg" alt="Patrioti Levice 93:72" />
+            <span>play</span>
+            <h3>Patrioti Levice – BC Slovan Bratislava 93:72</h3>
+          </a>
+          <a class="video-card reveal" data-category="sport" href="https://vimeo.com/1193355076?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/sport-04.jpg" alt="Patrioti Levice 85:72" />
+            <span>play</span>
+            <h3>Patrioti Levice – BC Slovan Bratislava 85 : 72</h3>
+          </a>
+
+          <a class="video-card large reveal" data-category="publicistika" href="https://vimeo.com/1199410700" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/pub-01.jpg" alt="Environmentálne projekty" />
+            <span>play</span>
+            <h3>Levice získali podporu na environmentálne projekty</h3>
+          </a>
+          <a class="video-card reveal" data-category="publicistika" href="https://vimeo.com/1198773260?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/pub-02.jpg" alt="Majstri Slovenska 2026" />
+            <span>play</span>
+            <h3>Patrioti Levice sú majstrami Slovenska 2026</h3>
+          </a>
+          <a class="video-card reveal" data-category="publicistika" href="https://vimeo.com/1191277152?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/pub-03.jpg" alt="Levická májová 5" />
+            <span>play</span>
+            <h3>Levická májová 5, 2026</h3>
+          </a>
+          <a class="video-card reveal" data-category="publicistika" href="https://vimeo.com/1192960984?share=copy&fl=sv&fe=ci" target="_blank" rel="noreferrer" hidden>
+            <img src="assets/pub-04.jpg" alt="Štvorylka 2026" />
+            <span>play</span>
+            <h3>Štvorylka 2026</h3>
+          </a>
+
+          <a class="video-card msz-card reveal" data-category="msz" href="https://vimeo.com/1194332048" target="_blank" rel="noreferrer" hidden>
+            <span>19</span>
+            <h3>19. plánované zasadnutie mestského zastupiteľstva v Leviciach - Záznam</h3>
+          </a>
+          <a class="video-card msz-card reveal" data-category="msz" href="https://vimeo.com/1187274620?share=copy" target="_blank" rel="noreferrer" hidden>
+            <span>18</span>
+            <h3>18. plánované zasadnutie mestského zastupiteľstva v Leviciach - Záznam</h3>
+          </a>
+          <a class="video-card msz-card reveal" data-category="msz" href="https://vimeo.com/1150070944" target="_blank" rel="noreferrer" hidden>
+            <span>17</span>
+            <h3>17. plánované zasadnutie MsZ v Leviciach - záznam</h3>
+          </a>
+          <a class="video-card msz-card reveal" data-category="msz" href="https://vimeo.com/1136905262" target="_blank" rel="noreferrer" hidden>
+            <span>07</span>
+            <h3>7. mimoriadne zasadnutie MsZ v Leviciach</h3>
+          </a>
+        </div>
+
+        <div class="archive-row reveal">
+          <a href="https://vimeo.com/user8658408/albums" target="_blank" rel="noreferrer">Otvoriť video archív</a>
+          <a href="https://vimeo.com/user8658408/collections" target="_blank" rel="noreferrer">Zobraziť viac kategórií</a>
+        </div>
+      </section>
+
+      <section class="section split-section" id="tim">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Náš tím</p>
+          <h2>Ľudia za obrazom a zvukom Levickej televízie.</h2>
+        </div>
+        <div class="team-grid">
+          <article class="person-card reveal">
+            <img src="assets/team-lubica.png" alt="Ľubica Lukáčová" />
+            <div>
+              <h3>Ľubica Lukáčová</h3>
+              <p>Konateľ</p>
+              <a href="tel:+421903586677">0903 586 677</a>
+              <a href="mailto:lukacova@levickatelevizia.sk">lukacova@levickatelevizia.sk</a>
+            </div>
+          </article>
+          <article class="person-card reveal">
+            <img src="assets/team-martin.png" alt="Martin Unterfranc" />
+            <div>
+              <h3>Martin Unterfranc</h3>
+              <p>Redaktor, kameraman</p>
+              <a href="mailto:unterfranc@levickatelevizia.sk">unterfranc@levickatelevizia.sk</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tune-section" id="informacie">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Informácie</p>
+          <h2>Ako si nás naladiť.</h2>
+        </div>
+        <div class="tune-grid" id="naladit">
+          <a class="tune-card reveal" href="https://player.vimeo.com/video/128492050?color=c9ff23&title=0&byline=0&portrait=0" target="_blank" rel="noreferrer">
+            <img src="assets/tune-sta.jpg" alt="STA" />
+            <h3>V meste Levice nás sledujte pomocou STA</h3>
+          </a>
+          <a class="tune-card reveal" href="https://player.vimeo.com/video/255246293?title=0&byline=0&portrait=0" target="_blank" rel="noreferrer">
+            <img src="assets/tune-orange.jpg" alt="Orange" />
+            <h3>Orange</h3>
+          </a>
+          <a class="tune-card reveal" href="https://player.vimeo.com/video/128492050?color=c9ff23&title=0&byline=0&portrait=0" target="_blank" rel="noreferrer">
+            <img src="assets/tune-lts.jpg" alt="Ako si naladiť LTS" />
+            <h3>Ako si naladiť LTS</h3>
+          </a>
+          <a class="tune-card reveal" href="https://player.vimeo.com/video/283437021?title=0&byline=0&portrait=0" target="_blank" rel="noreferrer">
+            <img src="assets/tune-magio.jpg" alt="Magio TV" />
+            <h3>Magio TV</h3>
+          </a>
+          <a class="tune-card reveal" href="https://player.vimeo.com/video/253459811?title=0&byline=0&portrait=0" target="_blank" rel="noreferrer">
+            <img src="assets/tune-upc.jpg" alt="UPC" />
+            <h3>UPC</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="section broadcast-section">
+        <div class="broadcast-card reveal">
+          <div>
+            <p class="eyebrow">Vysielacia štruktúra</p>
+            <h2>Každý deň 18 hodín vysielania.</h2>
+            <p>
+              Časový rozsah vysielania: od 6:00 hod. do 24:00 hod. - jedna hodinová
+              opakujúca sa slučka v uvedenom časovom rozsahu.
+            </p>
+          </div>
+          <div class="program-grid">
+            <div>
+              <strong>Programová skladba č. 1</strong>
+              <span>Reklama 12 min</span>
+              <span>Spravodajstvo 20 min</span>
+              <span>Šport 8 min</span>
+              <span>Publicistika 10 min</span>
+              <span>Informačný servis 10 min</span>
+            </div>
+            <div>
+              <strong>Programová skladba č. 2</strong>
+              <span>Vysielané o 9:00, 10:00, 17:00, 18:00</span>
+              <span>Reklama 12 min</span>
+              <span>Spravodajstvo 20 min</span>
+              <span>Šport 8 min</span>
+              <span>Informačný servis 20 min</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section admin-section" id="administrativa">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Administratíva</p>
+          <h2>Zoznam povinne zverejňovaných dokumentov.</h2>
+          <p>
+            Všetky zmluvy a faktúry sú k dispozícii k nahliadnutiu a na stiahnutie
+            vo formáte PDF.
+          </p>
+        </div>
+
+        <div class="admin-grid">
+          <article class="admin-card reveal">
+            <span>01</span>
+            <h3>Faktúry</h3>
+            <p>Prehľad zverejnených faktúr podľa rokov.</p>
+            <div class="year-links">
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=faktury%2B2026" target="_blank" rel="noreferrer">2026</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=faktury%2B2025" target="_blank" rel="noreferrer">2025</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=faktury%2B2024" target="_blank" rel="noreferrer">2024</a>
+            </div>
+          </article>
+
+          <article class="admin-card reveal">
+            <span>02</span>
+            <h3>Objednávky</h3>
+            <p>Zverejnené objednávky a súvisiace dokumenty.</p>
+            <div class="year-links">
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=objednavky%2B2026" target="_blank" rel="noreferrer">2026</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=objedn%25C3%25A1vky%2B2025" target="_blank" rel="noreferrer">2025</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=objednavky%2B2024" target="_blank" rel="noreferrer">2024</a>
+            </div>
+          </article>
+
+          <article class="admin-card reveal">
+            <span>03</span>
+            <h3>Zmluvy</h3>
+            <p>Prehľad zmlúv zverejňovaných v rámci administratívy spoločnosti.</p>
+            <div class="year-links">
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=zmluvy%2B2026" target="_blank" rel="noreferrer">2026</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=zmluvy%2B2025" target="_blank" rel="noreferrer">2025</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=zmluvy%2B2024" target="_blank" rel="noreferrer">2024</a>
+            </div>
+          </article>
+
+          <article class="admin-card reveal">
+            <span>04</span>
+            <h3>Správy o činnosti</h3>
+            <p>Ročné správy a dokumenty k činnosti Levickej televíznej spoločnosti.</p>
+            <div class="year-links">
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=sprava%2Bo%2B%25C4%258Dinnosti%2B-%2B2025" target="_blank" rel="noreferrer">2025</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=sprava%2Bo%2B%25C4%258Dinnosti%2B-%2B2024" target="_blank" rel="noreferrer">2024</a>
+              <a href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa?folder=sprava%2Bo%2B%25C4%258Dinnosti%2B-%2B2023" target="_blank" rel="noreferrer">2023</a>
+            </div>
+          </article>
+        </div>
+
+        <a
+          class="admin-open reveal"
+          href="https://levickatelevizia.sk/index.php/levicka-televizia-informacie/administrativa"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Otvoriť úplný administratívny archív
+        </a>
+      </section>
+
+      <section class="section advertising" id="reklama">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Cenník reklamy</p>
+          <h2>Reklamný priestor v lokálnej televízii.</h2>
+        </div>
+        <div class="ad-grid">
+          <article class="ad-card reveal">
+            <h3>Videotext</h3>
+            <p>Prezentačné farebné strany vo vysielaní s hudbou alebo nahovoreným textom.</p>
+            <strong>od 10,50 € / deň</strong>
+            <span>15 sekúnd, 18 odvysielaní</span>
+          </article>
+          <article class="ad-card reveal">
+            <h3>Reklamné spoty</h3>
+            <p>Výroba spotu 15 - 30 sekúnd alebo vysielanie existujúceho reklamného spotu.</p>
+            <strong>od 15,75 € / deň</strong>
+            <span>15 sekúnd / 1 deň</span>
+          </article>
+          <article class="ad-card reveal">
+            <h3>Reklamný rozhovor</h3>
+            <p>Výroba a vysielanie v jednej cene, štandardne 7 po sebe nasledujúcich dní.</p>
+            <strong>od 189,00 €</strong>
+            <span>1,00 - 2,00 minúty bez DPH</span>
+          </article>
+        </div>
+        <div class="order-card reveal">
+          <p>Objednávky reklám zabezpečuje Ľubica Lukáčová.</p>
+          <a href="tel:+421903586677">0903 586 677</a>
+          <a href="tel:+421366308420">036 630 8420</a>
+          <a href="mailto:lukacova@levickatelevizia.sk">lukacova@levickatelevizia.sk</a>
+        </div>
+      </section>
+
+      <section class="partners" aria-label="Naši partneri">
+        <div class="partners-track">
+          <a href="https://www.muzeumlevice.sk" target="_blank" rel="noreferrer">Tekovské múzeum</a>
+          <a href="https://www.aldoxlevice.sk" target="_blank" rel="noreferrer">Aldox</a>
+          <a href="https://sk.jooble.org" target="_blank" rel="noreferrer">Jooble</a>
+          <a href="https://www.margita-ilona.sk" target="_blank" rel="noreferrer">Kúpalisko Margita Ilona</a>
+          <a href="https://www.mskslevice.sk" target="_blank" rel="noreferrer">MSKS Levice</a>
+          <a href="https://www.kniznicalevice.sk" target="_blank" rel="noreferrer">Tekovská knižnica</a>
+          <a href="https://www.roslevice.sk" target="_blank" rel="noreferrer">ROS</a>
+          <a href="https://sszlevice.sk" target="_blank" rel="noreferrer">SŠZ Levice</a>
+          <a href="https://www.upc.sk" target="_blank" rel="noreferrer">UPC</a>
+          <a href="https://hklevice.sk" target="_blank" rel="noreferrer">HK Levice</a>
+          <a href="https://www.agripa.sk" target="_blank" rel="noreferrer">Agripa</a>
+          <a href="https://www.levice.sk" target="_blank" rel="noreferrer">Levice</a>
+          <a href="https://www.dentech.sk" target="_blank" rel="noreferrer">Dentech</a>
+        </div>
+      </section>
+
+      <section class="section contact" id="kontakt">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="eyebrow">Kontakt</p>
+            <h2>Sme dostupní pre divákov, redakciu aj reklamu.</h2>
+            <p>Levická televízna spoločnosť s.r.o., CK Junior, A. Sládkoviča 2, Levice.</p>
+          </div>
+          <div class="contact-grid">
+            <a href="tel:+421366308420"><span>Telefón</span><strong>036 63 08 420</strong></a>
+            <a href="mailto:redakcia@levickatelevizia.sk"><span>Email</span><strong>redakcia@levickatelevizia.sk</strong></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=CK%20Junior%20A.%20Sl%C3%A1dkovi%C4%8Da%202%20Levice" target="_blank" rel="noreferrer">
+              <span>Adresa prevádzky</span><strong>CK Junior, A. Sládkoviča 2, 934 01 Levice</strong>
+            </a>
+            <a href="https://vimeo.com/user8658408" target="_blank" rel="noreferrer"><span>Video archív</span><strong>Otvoriť Vimeo</strong></a>
+            <a href="https://www.facebook.com/levickateleviziask-137373433023631" target="_blank" rel="noreferrer"><span>Náš Facebook</span><strong>Prejsť na Facebook</strong></a>
+          </div>
+        </div>
+
+        <div class="billing reveal">
+          <h3>Fakturačné údaje</h3>
+          <p>
+            Levická televízna spoločnosť s.r.o., Nám. hrdinov 1, 934 01 Levice.
+            Právna forma: spoločnosť s ručením obmedzeným.
+          </p>
+          <div>
+            <span>IČO: 365 45 112</span>
+            <span>DIČ: 2021605927</span>
+            <span>IČ pre DPH: SK2021605927</span>
+            <span>IBAN: SK12 0900 0000 0050 7073 9583</span>
+          </div>
+          <p>
+            Zapísaná v obchodnom registri Okresného súdu v Nitre: Oddiel Sro,
+            vložka číslo: 12963/N.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#domov">
+        <img src="assets/logo.png" alt="Levická televízia" />
+      </a>
+      <p>© 2026 Levická televízna spoločnosť s.r.o. - Všetky práva vyhradené.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
